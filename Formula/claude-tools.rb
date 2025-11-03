@@ -2,12 +2,14 @@ class ClaudeTools < Formula
   desc "Unix-style utilities for managing Claude Code conversations"
   homepage "https://github.com/dlond/claude-tools"
   url "https://github.com/dlond/claude-tools/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "PLACEHOLDER_SHA256"  # Update after release
+
+  # Update after release
+  sha256 "717f933c82ed7ee04437e75df7397b7b71b33e7839e86dfdc76db81938ae81dd"
   license "MIT"
 
+  depends_on "dune" => :build
   depends_on "ocaml" => :build
   depends_on "opam" => :build
-  depends_on "dune" => :build
 
   def install
     # Install OCaml dependencies via opam
